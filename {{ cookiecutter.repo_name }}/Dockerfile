@@ -73,8 +73,8 @@ RUN apt-get clean \
 # Start SSH Agent on boot
 WORKDIR /home/root
 COPY . .
-WORKDIR /home/root
-RUN pip install --force-reinstall -e .
+# WORKDIR /home/root
+# RUN pip install --force-reinstall -e .
 
 # -----------------------------------------------------------------------------------------------------------
 # Define entrypoint
